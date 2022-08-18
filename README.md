@@ -12,7 +12,7 @@ $client = new JazzClient([
 ]);
 ```
 
-### OTC request
+### Voucher/OTC request
 ```php
 $txn_ref_no = time();
 
