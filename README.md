@@ -1,4 +1,4 @@
-## Jazzcash client for PHP
+## Jazzcash payment gateway client for PHP 
 This is the client library for consuming services of Jazzcash payment gateway.
 
 ### Init client
