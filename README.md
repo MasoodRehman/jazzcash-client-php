@@ -1,6 +1,6 @@
 ![Jazzcash](https://upload.wikimedia.org/wikipedia/en/b/b4/JazzCash_logo.png)
 ## Jazzcash payment gateway client for PHP 
-This is the client library for consuming services of Jazzcash payment gateway.
+This is the client library for consuming web services of Jazzcash payment gateway.
 
 ### Init client
 Replace `sandbox` with `payments` for production env.
