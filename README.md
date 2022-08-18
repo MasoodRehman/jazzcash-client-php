@@ -2,6 +2,7 @@
 This is the client library for consuming services of Jazzcash payment gateway.
 
 ### Init client
+Replace `sandbox` with `payments` for production env.
 ```php
 $client = new JazzClient([
     'apiBaseUrl' => 'https://sandbox.jazzcash.com.pk/',
