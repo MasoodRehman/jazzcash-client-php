@@ -27,7 +27,7 @@ $request->setTxnType('OTC');
 $request->setCallbackUrl('http://localhost/gateway/jazzcash/callback');
 $request->setCustomProperty('03331234567');
 
-$response = $this->client->callVoucherService($request);
+$response = $client->callVoucherService($request);
 if ($response->pp_ResponseCode == 0) {
     // Success
 } 
