@@ -1,6 +1,20 @@
 ![Jazzcash](https://upload.wikimedia.org/wikipedia/en/b/b4/JazzCash_logo.png)
 ## Jazzcash payment gateway client for PHP
-This is the client library for consuming web services of `Jazzcash` payment gateway.
+This client library provides access to the payment gateway web service interface of `Jazzcash`.
+
+# Requirements
+
+* PHP 5.4 or newer
+* CURL, JSON
+* Credential from `Jazzcash`
+
+# Installation
+
+The preferred method of installation is via [Composer](https://getcomposer.org/). Run the following command to install the package and add it as a requirement to your project's composer.json:
+
+```
+composer require brikmas/jazzcash-client-php
+```
 
 ## Init client
 Replace `sandbox` with `payments` for production environment along credentials.
