@@ -17,11 +17,30 @@ use Brikmas\Jazzcash\Entities\VoucherReq;
  */
 class JazzClient
 {
+    /**
+     * Version of package
+     * @var int
+     */
     const VERSION = 0.1;
-
+    /**
+     * Base url of API
+     * @var mixed
+     */
     private $apiBaseUrl;
+    /**
+     * Merchant secret key or salt provided by Jazzcash
+     * @var mixed
+     */
     private $sharedSecret;
+    /**
+     * Merchant Id assigned by Jazzcash
+     * @var mixed
+     */
     private $merchantId;
+    /**
+     * API password provided by Jazzcash
+     * @var mixed
+     */
     private $password;
 
     /**

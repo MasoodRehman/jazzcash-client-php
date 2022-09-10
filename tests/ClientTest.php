@@ -39,7 +39,7 @@ final class ClientTest extends TestCase
     {
         $txn_ref_no = time();
         $request = new VoucherReq();
-        $request->setAmount(10);
+        $request->setAmount(10.0);
         $request->setBillRefNumber($txn_ref_no);
         $request->setDescription('Unit test case');
         $request->setTxnRefNumber($txn_ref_no);
@@ -51,7 +51,11 @@ final class ClientTest extends TestCase
         $response = $this->client->callVoucherService($request);
 
         $this->assertNotEmpty($response);
+
         $this->assertObjectHasAttribute('pp_ResponseCode', $response);
-        $this->assertEquals(000, $response->pp_ResponseCode);
+        $this->assertEquals(124, $response->pp_ResponseCode);
+
+        $this->assertObjectHasAttribute('pp_ResponseMessage', $response);
+        $this->assertEquals("Order is placed and waiting for financial to be received over the counter.", $response->pp_ResponseMessage);
     }
 }

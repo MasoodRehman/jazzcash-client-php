@@ -1,8 +1,9 @@
 ## Jazzcash client for PHP
-This is the client library for consuming services of Jazzcash payment gateway.
+This is the client library for consuming web services of Jazzcash payment gateway.
 
 ### Init client
-Replace `sandbox` with `payments` for production env.
+Replace `sandbox` with `payments` for production environment along credentials.
+
 ```php
 $client = new JazzClient([
     'apiBaseUrl' => 'https://sandbox.jazzcash.com.pk/',
@@ -13,6 +14,8 @@ $client = new JazzClient([
 ```
 
 ### OTC request
+Make sure the `CallbackUrl` is same as given in the Jazzcash portal.
+
 ```php
 $txn_ref_no = time();
 
@@ -28,9 +31,9 @@ $request->setCustomProperty('03331234567');
 
 $response = $this->client->callVoucherService($request);
 if ($response->pp_ResponseCode == 0) {
-    // Success
+    // Handle success response
 } 
 else {
-    // Fail
+    // Handle fail response
 }
 ```
