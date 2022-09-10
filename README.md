@@ -53,4 +53,4 @@ If you've found a bug please feel free to open a ticket using the issue tracker.
 - [MasoodRehman](https://github.com/MasoodRehman)
 
 ## License
-The MIT License (MIT). Please see [License](License.md) File for more information.
+The MIT License (MIT). Please see [License](LICENSE) File for more information.
