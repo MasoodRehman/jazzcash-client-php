@@ -2,6 +2,7 @@
     "name": "brikmas/jazzcash-client-php",
     "description": "Jazzcash payment gateway client for PHP",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "MasoodRehman",
